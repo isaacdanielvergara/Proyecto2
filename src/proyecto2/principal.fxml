@@ -35,23 +35,23 @@
             <TextField fx:id="txtprecio" layoutX="452.0" layoutY="29.0" />
             <MenuButton layoutX="14.0" layoutY="29.0" mnemonicParsing="false" text="Buscar">
               <items>
-                <MenuItem fx:id="menuid" mnemonicParsing="false" text="ID" />
-                <MenuItem fx:id="menunom" mnemonicParsing="false" text="Nombre" />
-                  <MenuItem fx:id="menulote" mnemonicParsing="false" text="Fecha Lote" />
-                  <MenuItem fx:id="menuvence" mnemonicParsing="false" text="Fecha Vencimiento" />
-                  <MenuItem fx:id="menuprecio" mnemonicParsing="false" text="Precio" />
+                <MenuItem fx:id="menuid" mnemonicParsing="false" onAction="#actionevent" text="ID" />
+                <MenuItem fx:id="menunom" mnemonicParsing="false" onAction="#actionevent" text="Nombre" />
+                  <MenuItem fx:id="menulote" mnemonicParsing="false" onAction="#actionevent" text="Fecha Lote" />
+                  <MenuItem fx:id="menuvence" mnemonicParsing="false" onAction="#actionevent" text="Fecha Vencimiento" />
+                  <MenuItem fx:id="menuprecio" mnemonicParsing="false" onAction="#actionevent" text="Precio" />
               </items>
             </MenuButton>
             <MenuButton layoutX="14.0" layoutY="81.0" mnemonicParsing="false" text="Promediar">
               <items>
-                  <MenuItem fx:id="menuprom" mnemonicParsing="false" text="Promedio" />
-                <MenuItem fx:id="menumayprom" mnemonicParsing="false" text="Mayor al promedio" />
-                  <MenuItem fx:id="menumenprom" mnemonicParsing="false" text="Menor al promedio" />
-                  <MenuItem fx:id="menumayprecio" mnemonicParsing="false" text="Mayor precio" />
-                <MenuItem fx:id="menumenprecio" mnemonicParsing="false" text="Menor precio" />
+                  <MenuItem fx:id="menuprom" mnemonicParsing="false" onAction="#actionevent" text="Promedio" />
+                <MenuItem fx:id="menumayprom" mnemonicParsing="false" onAction="#actionevent" text="Mayor al promedio" />
+                  <MenuItem fx:id="menumenprom" mnemonicParsing="false" onAction="#actionevent" text="Menor al promedio" />
+                  <MenuItem fx:id="menumayprecio" mnemonicParsing="false" onAction="#actionevent" text="Mayor precio" />
+                <MenuItem fx:id="menumenprecio" mnemonicParsing="false" onAction="#actionevent" text="Menor precio" />
               </items>
             </MenuButton>
-            <Button fx:id="btnregistrar" defaultButton="true" layoutX="623.0" layoutY="94.0" mnemonicParsing="false" text="Registrar" />
+            <Button fx:id="btnregistrar" defaultButton="true" layoutX="623.0" layoutY="94.0" mnemonicParsing="false" onAction="#actionevent" text="Registrar" />
             <Label layoutX="106.0" layoutY="6.0" text="ID:" />
             <Label layoutX="276.0" layoutY="66.0" text="Fecha Vencimiento:" />
             <Label layoutX="452.0" layoutY="8.0" text="Precio:" />
@@ -59,11 +59,11 @@
             <Label layoutX="106.0" layoutY="66.0" text="Fecha Lote:" />
          </children>
       </Group>
-      <Button fx:id="btncerrar" layoutX="656.0" layoutY="434.0" mnemonicParsing="false" text="Cerrar" />
-      <Button fx:id="menos10" layoutX="116.0" layoutY="434.0" mnemonicParsing="false" text="-10" />
-      <Button fx:id="menos1" layoutX="157.0" layoutY="434.0" mnemonicParsing="false" text="-1" />
-      <Button fx:id="mas1" layoutX="192.0" layoutY="434.0" mnemonicParsing="false" text="+1" />
-      <Button fx:id="mas10" layoutX="230.0" layoutY="434.0" mnemonicParsing="false" text="+10" />
+      <Button fx:id="btncerrar" layoutX="656.0" layoutY="434.0" mnemonicParsing="false" onAction="#actionevent" text="Cerrar" />
+      <Button fx:id="menos10" layoutX="116.0" layoutY="434.0" mnemonicParsing="false" onAction="#actionevent" text="-10" />
+      <Button fx:id="menos1" layoutX="157.0" layoutY="434.0" mnemonicParsing="false" onAction="#actionevent" text="-1" />
+      <Button fx:id="mas1" layoutX="192.0" layoutY="434.0" mnemonicParsing="false" onAction="#actionevent" text="+1" />
+      <Button fx:id="mas10" layoutX="230.0" layoutY="434.0" mnemonicParsing="false" onAction="#actionevent" text="+10" />
       <Label layoutX="20.0" layoutY="438.0" text="Modificar fecha" />
    </children>
 </AnchorPane>

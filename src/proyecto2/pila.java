@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author danie
+ * @author isaac
  */
 public class pila {
     
@@ -47,7 +47,7 @@ public class pila {
         int i = 0;
         while (i<pila.size()){
             nome = (producto) pila.get(i);
-            if(nome.id.equals(nom))
+            if(nome.nom.equals(nom))
                 return nome;
             i++;
         }
