@@ -25,6 +25,7 @@ public class pila {
             JOptionPane.showMessageDialog(null," El nombre del producto ya se encuentra registrado");
         }else{
             pila.push(p);
+            principalController.productos.add(p);
             JOptionPane.showMessageDialog(null,"Producto registrado exitosamente!");
         }
     }
@@ -54,4 +55,29 @@ public class pila {
         return nome;
     }
     
+    public producto vencimiento (String fechav){
+        producto vencido = new producto();
+        int i = 0;
+        while (i<pila.size()){
+            vencido = (producto) pila.get(i);
+            if(vencido.fechav.equals(fechav))
+                return vencido;
+            i++;
+        }
+        vencido = null;
+        return vencido;
+    }
+    public void EliminarProducto (){
+      String fecha = principalController.fecha;
+        producto Eliminar = new producto ();
+        for(producto produ : pila){
+            Eliminar = vencimiento(fecha);
+            while (Eliminar != null){
+                pila.remove(Eliminar);
+                principalController.productos.remove(Eliminar);
+                Eliminar = vencimiento(fecha);
+                
+            }
+        }
+    }
 }
