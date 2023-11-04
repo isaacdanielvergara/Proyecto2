@@ -30,9 +30,9 @@
             <Separator layoutX="3.0" prefHeight="8.0" prefWidth="695.0" />
             <TextField fx:id="txtfechal" disable="true" editable="false" layoutX="106.0" layoutY="81.0" />
             <TextField fx:id="txtfechav" disable="true" editable="false" layoutX="276.0" layoutY="81.0" />
-            <TextField fx:id="txtid" layoutX="106.0" layoutY="29.0" />
-            <TextField fx:id="txtnom" layoutX="276.0" layoutY="29.0" />
-            <TextField fx:id="txtprecio" layoutX="452.0" layoutY="29.0" />
+            <TextField fx:id="txtid" layoutX="106.0" layoutY="29.0" onKeyTyped="#keyevent" />
+            <TextField fx:id="txtnom" layoutX="276.0" layoutY="29.0" onKeyTyped="#keyevent" />
+            <TextField fx:id="txtprecio" layoutX="452.0" layoutY="29.0" onKeyTyped="#keyevent" />
             <MenuButton layoutX="14.0" layoutY="29.0" mnemonicParsing="false" text="Buscar">
               <items>
                 <MenuItem fx:id="menuid" mnemonicParsing="false" onAction="#actionevent" text="ID" />

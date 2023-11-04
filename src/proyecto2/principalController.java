@@ -20,6 +20,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -181,7 +182,21 @@ public class principalController implements Initializable {
            System.exit(0);
        }
     }
-    
+    @FXML
+   private void keyevent (KeyEvent e){
+       Object evt = e.getSource();
+       if (evt.equals(txtid) || evt.equals(txtprecio)){
+           if (!Character.isDigit(e.getCharacter().charAt(0))){
+               e.consume();
+           }
+       }
+       
+       if (evt.equals(txtnom)){
+           if (!Character.isLetter(e.getCharacter().charAt(0))){
+               e.consume();
+           }
+       }
+   }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         calendario.add(Calendar.DATE, 31);
