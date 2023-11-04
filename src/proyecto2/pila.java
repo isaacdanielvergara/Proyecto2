@@ -80,4 +80,68 @@ public class pila {
             }
         }
     }
+        public void Buscarid (String id){
+        for (producto busqueda : pila){
+            if (busqueda.id.equals(id)){
+                JOptionPane.showMessageDialog(null, "El resultado de busqueda es: \n"
+                        + "ID: " + busqueda.id + "\n"
+                        + "nombre: " + busqueda.nom + "\n"
+                        + "fecha lote: " + busqueda.fechal + "\n"
+                        + "fecha vencimiento: " +  busqueda.fechav + "\n"
+                        + "Precio: " + busqueda.preciou);
+            }
+        }
+    }
+    
+    public void Buscarnombre (String nombre){
+        for (producto busqueda : pila){
+            if (busqueda.nom.equals(nombre)){
+                JOptionPane.showMessageDialog(null, "El resultado de busqueda es: \n"
+                        + "ID: " + busqueda.id + "\n"
+                        + "nombre: " + busqueda.nom + "\n"
+                        + "fecha lote: " + busqueda.fechal + "\n"
+                        + "fecha vencimiento: " +  busqueda.fechav + "\n"
+                        + "Precio: " + busqueda.preciou);
+            }
+        }
+    }
+    
+    public void Buscarprecio (float precio){
+        for (producto busqueda : pila){
+            if (busqueda.preciou == (precio)){
+                JOptionPane.showMessageDialog(null, "El resultado de busqueda es: \n"
+                        + "ID: " + busqueda.id + "\n"
+                        + "nombre: " + busqueda.nom + "\n"
+                        + "fecha lote: " + busqueda.fechal + "\n"
+                        + "fecha vencimiento: " +  busqueda.fechav + "\n"
+                        + "Precio: " + busqueda.preciou);
+            }
+        }
+    }
+    
+    public void Buscarfechal (String fechal){
+        for (producto busqueda : pila){
+            if (busqueda.fechal.equals(fechal)){
+                JOptionPane.showMessageDialog(null, "El resultado de busqueda es: \n"
+                        + "ID: " + busqueda.id + "\n"
+                        + "nombre: " + busqueda.nom + "\n"
+                        + "fecha lote: " + busqueda.fechal + "\n"
+                        + "fecha vencimiento: " +  busqueda.fechav + "\n"
+                        + "Precio: " + busqueda.preciou);
+            }
+        }
+    }
+    
+    public void Buscarfechav (String fechav){
+        for (producto busqueda : pila){
+            if (busqueda.fechav.equals(fechav)){
+                JOptionPane.showMessageDialog(null, "El resultado de busqueda es: \n"
+                        + "ID: " + busqueda.id + "\n"
+                        + "nombre: " + busqueda.nom + "\n"
+                        + "fecha lote: " + busqueda.fechal + "\n"
+                        + "fecha vencimiento: " +  busqueda.fechav + "\n"
+                        + "Precio: " + busqueda.preciou);
+            }
+        }
+    }
 }
